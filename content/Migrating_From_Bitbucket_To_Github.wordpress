@@ -23,6 +23,34 @@ Next remote add the github repository link for the repository that you had creat
 git remote add gitremote git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git
 </code>
 
+Now the remote list should look like this.
+<code>
+gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (fetch)
+gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (push)
+origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (fetch)
+origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (push)
+upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (fetch)
+upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (push)
+</code>
+
+The normal flow can then be resumed as is said in this <a href="http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/">nice article</a> on git flows.
+Make a new branch
+<code>
+git checkout -b migration
+</code>
+
+Make any changes if needed. Commit them
+<code>
+git commit -am "latest commits before migration"
+</code>
+
+Push the branch to Github
+<code>
+git push gitremote migration
+</code>
+
+Now that the code has been pushed you can go to Github. You will find that a new branch has been created there. You can open a pull request and merge the branch with master.
+
 References:
 1. https://gist.github.com/foogit/8410710
 2. http://www.business2community.com/business-innovation/bitbucket-vs-github-best-version-control-software-business-01623901#Eo8gBT3SRB3KkEI2.97
