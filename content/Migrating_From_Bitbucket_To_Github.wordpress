@@ -11,10 +11,17 @@ So what does it mean for us, the average developers. One strategy can be that we
 
 First create a public repository on Github. For creating repositories there are <a href="https://help.github.com/articles/create-a-repo/">excellent articles</a> in case you dont already know how to create one. Do not check the"create README.md" option as this might introduce merge issues when doing the migrating later. 
 
+Clone the bitbucket repo if you have not already done it
+<code>
+git clone git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git
+</code>
 
+Please check once if the origin is pointing to the present bitbucket repository using the command <code>git remote -v</code>
 
-
-
+Next remote add the github repository link for the repository that you had created earlier. Note: It helps if the username for both GitHub and the Bitbucket is the same and you use the same username for commiting changes. This way your profile history in GitHub too will mirror all the work that you had done committing changes while working in the Butbucket repo.
+<code>
+git remote add gitremote git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git
+</code>
 
 References:
 1. https://gist.github.com/foogit/8410710
