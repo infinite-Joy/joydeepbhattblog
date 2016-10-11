@@ -13,3 +13,4 @@ Thankyou for reading my blog
     * [IBM developer connect 2016](http://joydeepbhatt.com/2016/06/ibm-developer-connect-2016/)
     * [RNN and Sentiment Analysis](http://joydeepbhatt.com/2016/05/rnn-and-sentiment-analysis/)
     * [Design Patterns](http://joydeepbhatt.com/2016/04/design-patterns/)
+    * [PyCon 2015](http://joydeepbhatt.com/2015/10/pycon-2015/)
