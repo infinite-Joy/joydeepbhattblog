@@ -13,6 +13,7 @@ Thankyou for reading my blog
     * [IBM developer connect 2016](http://joydeepbhatt.com/2016/06/ibm-developer-connect-2016/)
     * [RNN and Sentiment Analysis](http://joydeepbhatt.com/2016/05/rnn-and-sentiment-analysis/)
     * [Design Patterns](http://joydeepbhatt.com/2016/04/design-patterns/)
+    * [How to drive change?](http://joydeepbhatt.com/2015/11/how-to-drive-change/)
     * [Breaks Breaks Breaks](http://joydeepbhatt.com/2015/10/breaks-breaks-breaks/)
     * [Jython Automation in Websphere](http://joydeepbhatt.com/2015/10/jython-automation-in-websphere/)
     * [PyCon 2015](http://joydeepbhatt.com/2015/10/pycon-2015/)
