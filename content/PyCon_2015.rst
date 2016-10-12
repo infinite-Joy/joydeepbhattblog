@@ -1,3 +1,14 @@
+PyCon 2015
+##############
+
+:date: 2015-10-15 10:20
+:modified: 2016-10-12 00:04
+:tags: python, pycon
+:category: conferences
+:slug: pycon-2015
+:authors: Joydeep Bhattacharjee
+:summary: What happened at PyCon 2015
+
 The past weekend Oct(2-4) was a very exhilarating experience as I could attend the Pycon India 2015. The main focus that I found in this years' conference was addressing the problem of scalability using `ansible`_. I attended a workshop where they showed how to use the ansible and how to create a playbook which can be used to manage scripts. There were other talks where the devops guys at LinkedIn gave a talk on how they manage hundreds of servers and how they leveraged the technology of bit-torrent to sync large amount of data between servers.
 
 Both the keynote speakers talked about using python powered technology aids for education in our schools and classrooms. The other focus points was Django and the research going on in NLP techniques. I am personally not very hopeful about the integration of the ambiguity of words in a programming language. Words make sense depending on the context and hence if we are able to come up with a vocabulary that is able to correctly guess the meaning of the words that we input, isn't it the birth of a new programming language. I guess the specs were designed keeping in view this goal in mind. In taking such tools to our production environment we need to be very careful on the limit and scope of such tools.

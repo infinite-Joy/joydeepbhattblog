@@ -1,3 +1,14 @@
+Migrating From Bitbucket To Github
+##############
+
+:date: 2016-08-15 10:20
+:modified: 2016-10-12 00:04
+:tags: source-control, github, bitbucket
+:category: software-engineering
+:slug: migrating-from-bitbucket-to-github
+:authors: Joydeep Bhattacharjee
+:summary: migrating from bitbucket to github
+       
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

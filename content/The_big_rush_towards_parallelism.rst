@@ -1,3 +1,14 @@
+The big rush towards parallelism
+##############
+
+:date: 2016-01-15 10:20
+:modified: 2016-10-12 00:04
+:tags: parallelism
+:category: algorithms
+:slug: the-big-rush-towards-parallelism
+:authors: Joydeep Bhattacharjee
+:summary: use parallelism only when truly needed
+
 First and foremost I would like to say is that although parallelism and concurrency are orthogonal concepts I am going to use them as if they have the same meaning and use them interchangeably throughout the post.
 
 In recent times I have seen a lot of and interest towards parallelism. The argument is that the times are past us where the processors will gain significant in clock speeds and we have reached the limitations imposed by physics on how much fast a processor can get. Unless a total engineering paradigm shift in the way the processors are manufactured is done we are stuck with our current processing speeds.

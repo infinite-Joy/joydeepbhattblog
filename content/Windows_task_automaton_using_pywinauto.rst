@@ -1,3 +1,14 @@
+Windows task automaton using pywinauto
+##############
+
+:date: 2016-07-15 10:20
+:modified: 2016-10-12 00:04
+:tags: windows, python, automation
+:category: python
+:slug: windows-task-automaton-using-pywinauto
+:authors: Joydeep Bhattacharjee
+:summary: automation in windows using python
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
