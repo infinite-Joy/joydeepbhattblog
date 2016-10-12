@@ -1,4 +1,4 @@
-A large computer system is very different from a small system in the sense that the way the whole system is designed and implemented gains a lot of say in the maintainability cost and the flexibility of the system to change. There are some common problems in a large and complex environment. Attacking these problems, design patterns were proposed in the <a href="http://www.amazon.in/Design-Patterns-Elements-Reusable-Oriented/dp/8131700070/ref=sr_1_1?ie=UTF8&amp;qid=1460127461&amp;sr=8-1&amp;keywords=gang+of+four">Gang of Four book</a>. In software engineering, a design pattern is a generally accepted solution to a common problem in a specific solution. They are mainly ideas that must be implemented according to the context and based on the specific language that they are being implemented. Here in this post I will discuss some general and more common design patterns and the context in which we should look forward to implementing them.
+A large computer system is very different from a small system in the sense that the way the whole system is designed and implemented gains a lot of say in the maintainability cost and the flexibility of the system to change. There are some common problems in a large and complex environment. Attacking these problems, design patterns were proposed in the `Gang of Four book`_. In software engineering, a design pattern is a generally accepted solution to a common problem in a specific solution. They are mainly ideas that must be implemented according to the context and based on the specific language that they are being implemented. Here in this post I will discuss some general and more common design patterns and the context in which we should look forward to implementing them.
 
 Below are some common patterns that can be used and the context in which that they can be implemented. I have tried to given a simple exxplanation of the patterns along with a use cases where these can be implemented so that you are able to grasp some of the context in which these can be used. I have also tried to provide some common pitfalls or risks that the developer should be aware of while implementing the pattern. Of course the actual implementation of the specific pattern depends on the context of the application code and how well this is implemented. You should not look forward to implementing a pattern just because you think that you know about it. If implemented carelessly, one part of the code can have adverse effects on other parts of the system.
 
@@ -20,7 +20,7 @@ This is another creation pattern where there exists a class that is responsible 
 
 Façade pattern
 
-This is a structural pattern. Use this pattern when you need to abstract away the complexities of the underlying system and need to provide and clear and simple interface to the client. The underlying classes should not be aware of the facade layer. Use cases can be providing a single api to get all the computer information at one go as is shown in the present <a href="https://en.wikipedia.org/wiki/Facade_pattern#Java">wikipedia link</a>.
+This is a structural pattern. Use this pattern when you need to abstract away the complexities of the underlying system and need to provide and clear and simple interface to the client. The underlying classes should not be aware of the facade layer. Use cases can be providing a single api to get all the computer information at one go as is shown in the present `wikipedia link`_.
 
 The facade is not a method to shield the underlying system and the client can dig into the underlying system if it so wishes. So please use the facade if it makes the use of the system less complicated to the client by various orders of magnitude since for a simple system this will just be an additional class and will add unnecessary complexity to the system.
 
@@ -62,7 +62,7 @@ This is a behavioural pattern in that this is used to allow an object to change 
 
 This pattern is used to implement the Finite State Machines.
 
-Code for all the patterns listed here and many more can be found in the GitHub link <a href="https://github.com/faif/python-patterns">here</a>. Please contribute to it or if a better implementation is found please update the libraries and examples.
+Code for all the patterns listed here and many more can be found in the GitHub link `here`_. Please contribute to it or if a better implementation is found please update the libraries and examples.
 <p style="font-size: 12px;">References and Further Readings:</p>
 
 <ul style="font-size: 12px;">
@@ -73,3 +73,7 @@ Code for all the patterns listed here and many more can be found in the GitHub l
 	<li>https://github.com/faif/python-patterns</li>
 	<li>http://www.oodesign.com/template-method-pattern.html</li>
 </ul>
+
+.. _Gang of Four book: http://www.amazon.in/Design-Patterns-Elements-Reusable-Oriented/dp/8131700070/ref=sr_1_1?ie=UTF8&amp;qid=1460127461&amp;sr=8-1&amp;keywords=gang+of+four
+.. _wikipedia link: https://en.wikipedia.org/wiki/Facade_pattern#Java
+.. _here: https://github.com/faif/python-patterns

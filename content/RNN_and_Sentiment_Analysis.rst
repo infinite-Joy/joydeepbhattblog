@@ -1,6 +1,6 @@
 I have recently been trying to take a splash in the vast waters of deep learning. Deep learning is a special branch of machine learning and might as well be the only foray into the voodoo of artificial intelligence.
 
-One class of problems that can be taken to understand how this whole thing works is through the classical problem of sentiment analysis. To approach this Recurrent Neural Networks work better. We shall create a model so that after the model is trained, it can read the input sentences and give determine if the sentence is a positive sentence or a negative sentence. I am doing the whole thing using <a href="http://deeplearning.net/software/theano/">Theano</a> as the backend and the <a href="http://keras.io/">keras</a> library. The documentation on how to install this can be found in the links provided. Also I will say that development in windows has some dependency issues for keras and theano so I will recommmend using any of the linux flavours but if you could resolve the dependencies please let me know. Please look into <a href="https://datanoord.com/2016/02/01/setup-a-deep-learning-environment-on-windows-theano-keras-with-gpu-enabled/">this post</a> for additional information.
+One class of problems that can be taken to understand how this whole thing works is through the classical problem of sentiment analysis. To approach this Recurrent Neural Networks work better. We shall create a model so that after the model is trained, it can read the input sentences and give determine if the sentence is a positive sentence or a negative sentence. I am doing the whole thing using `Theano`_ as the backend and the `keras`_ library. The documentation on how to install this can be found in the links provided. Also I will say that development in windows has some dependency issues for keras and theano so I will recommmend using any of the linux flavours but if you could resolve the dependencies please let me know. Please look into `this post`_ for additional information.
 
 So first we can import all the libraries
 
@@ -23,7 +23,7 @@ from keras import backend as K
 from theano import function
 </code>
 
-One thing to note is that the seeding should be done at the top for reproducibility. Even after that please check carefully.The seeding does not guarantee anything as can be seen from this <a href="http://stackoverflow.com/questions/32419510/how-to-get-reproducible-results-in-keras">stackoverflow post</a> or from this <a href="https://github.com/fchollet/keras/issues/2479">keras issue tracker</a>. You can see that we are importing the imdb dataset from the keras available datasets to train our model.
+One thing to note is that the seeding should be done at the top for reproducibility. Even after that please check carefully.The seeding does not guarantee anything as can be seen from this `stackoverflow post`_ or from this `keras issue tracker`_. You can see that we are importing the imdb dataset from the keras available datasets to train our model.
 
 Moving on to the next part of the code.
 
@@ -49,7 +49,7 @@ print("X_train shape:", X_train.shape)
 print("X_test shape:", X_test.shape)
 </code>
 
-Then we pad the sequences. From the <a href="http://keras.io/preprocessing/sequence/#pad_sequences">documentation</a> we can see that the maxlen arg is the maximum sequence length, longer sequences are truncated and shorter sequences are padded with zeros at the end. This does not have any major impact as we can see from <a href="https://github.com/fchollet/keras/issues/85">this thread</a> explained by fchollet.
+Then we pad the sequences. From the `documentation`_ we can see that the maxlen arg is the maximum sequence length, longer sequences are truncated and shorter sequences are padded with zeros at the end. This does not have any major impact as we can see from `this thread`_ explained by fchollet.
 
 The training dataset can be seen by printing the X_train[0]. We can see that this is a tensor. 
 
@@ -65,7 +65,7 @@ The training dataset can be seen by printing the X_train[0]. We can see that thi
      33   256    82     7]]
 </code>
 
-As we can see the points in the vectors are really int scalars and they are id's of each word. This is done through good word to vector representations. For more clarity please look into <a href="http://arxiv.org/pdf/1301.3781.pdf">this google paper</a>. Another good blog to understand how to make vectors out of sentences is <a href="http://benjaminbolte.com/blog/2016/keras-language-modeling.html">this blog post</a>. For good word to vec representations please look into the google <a href="https://code.google.com/archive/p/word2vec/">word2vec</a> or standfords glove. For python implementations please visit <a href="https://github.com/piskvorky/gensim">gensim</a> and <a href="https://github.com/stanfordnlp/GloVe">glove</a>. 
+As we can see the points in the vectors are really int scalars and they are id's of each word. This is done through good word to vector representations. For more clarity please look into `this google paper`_. Another good blog to understand how to make vectors out of sentences is `this blog post`_. For good word to vec representations please look into the google `word2vec`_ or standfords glove. For python implementations please visit `gensim`_ and `glove`_. 
 
 Moving on to the next part of the code, we build the sequential model,
 
@@ -84,7 +84,7 @@ model.add(Dense(1))
 model.add(Activation('sigmoid'))
 </code>
 
-Please note that here we have used the LSTM algorithm with vector space having 128 dimensions. Please read more on LSTM <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">here</a>. Also a sigmoid activation is used to provide us with a binary outputs.
+Please note that here we have used the LSTM algorithm with vector space having 128 dimensions. Please read more on LSTM `here`_. Also a sigmoid activation is used to provide us with a binary outputs.
 
 Then we compile the function and then train it. One thing that needs to be noted in this step is that in older applications one might see a show_accuracy = True argument being passed to the model.fir function. But in case of keras 1.0 we need to pass the metrics = ["accuracy"] argument during the compile time, i.e. in the model.compile function so that we can get the accuracy in the output.
 
@@ -133,3 +133,18 @@ Test accuracy: 0.838
 </code>
 
 Please let me know of models which will have a better accuracy. Of course one thing needs to be noted is that the dataset that has been chosen is small and hence for better predictions we should have used one of the pre-trained models.
+
+
+.. _Theano: http://deeplearning.net/software/theano/
+.. _keras: http://keras.io/
+.. _this post: https://datanoord.com/2016/02/01/setup-a-deep-learning-environment-on-windows-theano-keras-with-gpu-enabled/
+.. _stackoverflow post: http://stackoverflow.com/questions/32419510/how-to-get-reproducible-results-in-keras
+.. _keras issue tracker: https://github.com/fchollet/keras/issues/2479
+.. _documentation: http://keras.io/preprocessing/sequence/#pad_sequences
+.. _this thread: https://github.com/fchollet/keras/issues/85
+.. _this google paper: http://arxiv.org/pdf/1301.3781.pdf
+.. _this blog post: http://benjaminbolte.com/blog/2016/keras-language-modeling.html
+.. _word2vec: https://code.google.com/archive/p/word2vec/
+.. _gensim: https://github.com/piskvorky/gensim
+.. _glove: https://github.com/stanfordnlp/GloVe
+.. _here: https://en.wikipedia.org/wiki/Long_short-term_memory
