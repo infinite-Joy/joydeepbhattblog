@@ -28,7 +28,7 @@ We developers hate repetition. So we constantly look to remove repetition and re
 There is a disclaimer here. I have only looked at this library and autoit for me automaton needs so I am not sure about the other robot technologies that are out there like the robot class of java. If there are other packages and libraries that you feel to be more powerful, I would love to hear about them. Also I use one of the applications that come bundled with autoit for reasons that I will share later on in this post, so my automaton development is
 not "pure" if you like to put it that way.
 
-Now lets move on to the installations and the setup that is required. First of course you need <a href="https://www.python.org/">python</a>. Please ensure that you have pip and virtualenv as well. If you are using python3 that would translate to pip3 and pyvenv. I will be using the python2.7 paradigm for the trivial things. Please translate it to python3 as and where necessary. For non obvious difference I will point those out explicitly.
+Now lets move on to the installations and the setup that is required. First of course you need `Python`_. Please ensure that you have pip and virtualenv as well. If you are using python3 that would translate to pip3 and pyvenv. I will be using the python2.7 paradigm for the trivial things. Please translate it to python3 as and where necessary. For non obvious difference I will point those out explicitly.
 
 Then fire up the virtualenv.
 
@@ -57,15 +57,15 @@ or just download the zip file and unzip it. This is used to identify the handler
 <code>pip install -r dev-requirements.txt
 python swapy-ob.py</code>
 
-This should open a window where the controls will be shown for the existing windows that are open. Select the window that you are looking forward to automate and then this should give the control. Good screenshots are available in the <a href="https://github.com/pywinauto/SWAPY">swapy git page</a>.
+This should open a window where the controls will be shown for the existing windows that are open. Select the window that you are looking forward to automate and then this should give the control. Good screenshots are available in the `swapy git page`_.
 
-One last package that I would suggest that you download is the <a href="https://www.autoitscript.com/site/autoit/">autoit package</a>. This is a whole package and automating language by itself but I didn't feel very comfortable in it. But one of the tools that come packaged with the installer is the autoit window info tool. In many cases I was seeing that I was not finding the specific control for the button or a menu item that I need to be clicked. This window info is a very good tool to find the specific coordinates of the button or the control so that I can pass the coordinated to the mouse click method.
+One last package that I would suggest that you download is the `autoit package`_. This is a whole package and automating language by itself but I didn't feel very comfortable in it. But one of the tools that come packaged with the installer is the autoit window info tool. In many cases I was seeing that I was not finding the specific control for the button or a menu item that I need to be clicked. This window info is a very good tool to find the specific coordinates of the button or the control so that I can pass the coordinated to the mouse click method.
 
 <a href="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info.png"><img src="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info-200x300.png" alt="window_info" width="200" height="300" class="alignnone size-medium wp-image-117" /></a>
 
 As you can see in the screenshot the mouse menu is highlighted. First give cntrl+shift+f to unfreeze the window info tool. Then if you move the mouse you will see that the position property will change and it would show you the coordinates. Once you take the mouse and hover over the control that you want to click, then press cntrl+shift+f to freeze the tool again and then you can copy the coordinates to your script.
 
-Then fire up and start writing your script. If you still have problems ping me up and I will call you. A sample script is kept at this <a href="https://github.com/infinite-Joy/windows_automation/blob/master/sql_developer_automaton/sql_developer_automaton.py">github link</a>. If you feel that something can be made better or one of the functions can be made smaller send a pull request and I will be happy to merge it.
+Then fire up and start writing your script. If you still have problems ping me up and I will call you. A sample script is kept at this `github link`_. If you feel that something can be made better or one of the functions can be made smaller send a pull request and I will be happy to merge it.
 
 At the end if you need to distribute the file as a windows exe binary run the following command
 
@@ -76,3 +76,8 @@ The onefile arguments tells pyinstaller to generate only one binary file. Paths 
 Thanks for reading this post and if you feel that some things that are explained here can be made better please give in the comments. I hope this has fired you up and now will automate away all the tasks that you have been hating all this time.
 
 Happy Coding.:)
+
+.. _Python: https://www.python.org/
+.. _swapy git page: https://github.com/pywinauto/SWAPY
+.. _autoit package: https://www.autoitscript.com/site/autoit/
+.. _github link: https://github.com/infinite-Joy/windows_automation/blob/master/sql_developer_automaton/sql_developer_automaton.py
