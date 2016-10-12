@@ -1,3 +1,14 @@
+RNN and Sentiment Analysis
+##############
+
+:date: 2016-05-15 10:20
+:modified: 2016-10-12 00:04
+:tags: python, deep-learning
+:category: data
+:slug: rnn-and-sentiment-analysis
+:authors: Joydeep Bhattacharjee
+:summary: deep-learning through theano in python
+
 I have recently been trying to take a splash in the vast waters of deep learning. Deep learning is a special branch of machine learning and might as well be the only foray into the voodoo of artificial intelligence.
 
 One class of problems that can be taken to understand how this whole thing works is through the classical problem of sentiment analysis. To approach this Recurrent Neural Networks work better. We shall create a model so that after the model is trained, it can read the input sentences and give determine if the sentence is a positive sentence or a negative sentence. I am doing the whole thing using `Theano`_ as the backend and the `keras`_ library. The documentation on how to install this can be found in the links provided. Also I will say that development in windows has some dependency issues for keras and theano so I will recommmend using any of the linux flavours but if you could resolve the dependencies please let me know. Please look into `this post`_ for additional information.

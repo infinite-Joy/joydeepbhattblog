@@ -1,3 +1,14 @@
+Breaks Breaks Breaks
+######################################
+
+:date: 2015-10-15 10:20
+:modified: 2016-10-12 00:04
+:tags: random
+:category: random
+:slug: breaks-breaks-breaks
+:authors: Joydeep Bhattacharjee
+:summary: working hours in software industry
+
 Many IT companies are eyeing the option of mid-week breaks, where instead of the traditional two day off on Saturday and Sunday an alternative off policy can be taken where off from work can be given on maybe Wednesday or Thursday and another off on Sunday. Proponents bring to light the fact that in the high stress environment of IT industries, the resources get burnt out even before the five day week is over.
 
 The concept of Sunday off comes from the Abrahamic religions where Sunday is kept for church and religious activities. With greater social and economic gains especially in the US the amount of work hours decreased till Henry Ford standardised the five hour work weeks in 1926. In 1938 the United States passed a law where the maximum number of hours was fixed at 40. The software industry took this concept from the west and have standardised the five hour work week in India.

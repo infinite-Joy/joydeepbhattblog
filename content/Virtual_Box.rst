@@ -1,3 +1,14 @@
+Virtual Box
+##############
+
+:date: 2016-02-15 10:20
+:modified: 2016-10-12 00:04
+:tags: virtualisation
+:category: devops
+:slug: virtual-box
+:authors: Joydeep Bhattacharjee
+:summary: virtualisation using virtual-box
+
 I have been struggling a lot with a particular problem and now that I have made finally had a breakthrough, in retrospect it seems, as with all breakthroughs, should not have been that tough. I installed ubuntu in virtual-box and I was not able to make it fullscreen. Nevertheless I am going to go through all the steps that I did for this purpose.
 
 Almost all the resources that a modern developer works with have been virtualised. Nothing is bare-metal these days and virtualisation of the OS or the bare metal server was one of the first resources where the concept of virtualisation was widely adopted. For an individual developer this is of great value. A developer needs to sometimes manipulate and access core areas of the OS or the kernel that he is working in, maybe as a simple developer requirement or for greater performance of his application. He may also need to install various software that he needs for his work. `Virtual Box`_ is an awesome free virtual machine set-up tool provided by Oracle that can cater to such needs of the developer. Also it is also the only professional solution that is freely available as Open Source Software under the terms of the GNU General Public License (GPL) version 2. Whenever i hear the term Open Source I just go GAGA like a school girl.
@@ -6,7 +17,7 @@ Having heard these benefits of virtualisation I thought maybe this is something 
 
 Next I downloaded and installed virtual-box and the `instructions`_ were helpful. I downloaded the ubuntu image file. I fired a vm in the virtual-box and then installed the Ubuntu OS.
 
-Now here comes the fun part. I saw that the screen takes up only a part of the screen. It is as if the whole visualization thing went south on me. Kaboom.!!?! The screen filled only a tiny part of my desktop. And when I fired the `Almighty Terminal`_(cntrl+alt+t), that too took more smaller part and things just was not working for me. At that time I was doing some learning C/C++ language and had not figured out how to compile it in windows. In any case this was a good thing because this drove me towards `Cygwin`_ and `MinGW`_ and I could learn a little more on how to code in windows. Isn't it our failures that bring out the best in us. So fail a lot, fail fast and look forward to failures.
+Now here comes the fun part. I saw that the screen takes up only a part of the screen. It is as if the whole visualization thing went south on me. Kaboom.!!?! The screen filled only a tiny part of my desktop. And when I fired the `Almighty Terminal`_ (cntrl+alt+t), that too took more smaller part and things just was not working for me. At that time I was doing some learning C/C++ language and had not figured out how to compile it in windows. In any case this was a good thing because this drove me towards `Cygwin`_ and `MinGW`_ and I could learn a little more on how to code in windows. Isn't it our failures that bring out the best in us. So fail a lot, fail fast and look forward to failures.
 
 But then again something happened and the universe again pounded on me that there is a reason why best practices are what they are and why everyone follows them. I was building an app in windows and the language I was using was `Python2.7`_ and I used the multiprocessing module to pipeline the tasks as it was making a lot of network calls and when I fired the app to test it exploded. It took me five seconds to understand what was happening but then I understood that my C:\ drive was filling up completely. Within seconds my app just gobbled up something around 20 GB of space on my main windows drive.
 

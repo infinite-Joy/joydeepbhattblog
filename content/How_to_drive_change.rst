@@ -1,3 +1,14 @@
+How to drive change?
+####################################################
+
+:date: 2015-11-15 10:20
+:modified: 2016-10-12 00:04
+:tags: agile
+:category: blogs
+:slug: how-to-drive-change
+:authors: Joydeep Bhattacharjee
+:summary: Bring change internally
+
 PM: Those two new issues are absolutely critical. They have to go in to the next drop.<span class="Apple-converted-space"> </span>
 Me: I only have time to do one before I leave. Which one's most important?<span class="Apple-converted-space"> </span>
 PM: Both are critical. They won't accept the build if both aren't in. They have to be in.<span class="Apple-converted-space"> </span>

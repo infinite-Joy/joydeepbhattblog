@@ -1,3 +1,14 @@
+Design Patterns
+##############
+
+:date: 2016-04-15 10:20
+:modified: 2016-10-12 00:04
+:tags: algorithms, patterns, python
+:category: python
+:slug: design-patterns
+:authors: Joydeep Bhattacharjee
+:summary: various design pattern implementation in python
+
 A large computer system is very different from a small system in the sense that the way the whole system is designed and implemented gains a lot of say in the maintainability cost and the flexibility of the system to change. There are some common problems in a large and complex environment. Attacking these problems, design patterns were proposed in the `Gang of Four book`_. In software engineering, a design pattern is a generally accepted solution to a common problem in a specific solution. They are mainly ideas that must be implemented according to the context and based on the specific language that they are being implemented. Here in this post I will discuss some general and more common design patterns and the context in which we should look forward to implementing them.
 
 Below are some common patterns that can be used and the context in which that they can be implemented. I have tried to given a simple exxplanation of the patterns along with a use cases where these can be implemented so that you are able to grasp some of the context in which these can be used. I have also tried to provide some common pitfalls or risks that the developer should be aware of while implementing the pattern. Of course the actual implementation of the specific pattern depends on the context of the application code and how well this is implemented. You should not look forward to implementing a pattern just because you think that you know about it. If implemented carelessly, one part of the code can have adverse effects on other parts of the system.
