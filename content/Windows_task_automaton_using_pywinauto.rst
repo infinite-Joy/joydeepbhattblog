@@ -1,5 +1,5 @@
 Windows task automaton using pywinauto
-##############
+################################################
 
 :date: 2016-07-15 10:20
 :modified: 2016-10-12 00:04
@@ -9,21 +9,7 @@ Windows task automaton using pywinauto
 :authors: Joydeep Bhattacharjee
 :summary: automation in windows using python
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  }; 
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+<script> window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v2.6' }); }; (function(d, s, id){ var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
   
 <div 
   class="fb-post" 
@@ -92,3 +78,4 @@ Happy Coding.:)
 .. _swapy git page: https://github.com/pywinauto/SWAPY
 .. _autoit package: https://www.autoitscript.com/site/autoit/
 .. _github link: https://github.com/infinite-Joy/windows_automation/blob/master/sql_developer_automaton/sql_developer_automaton.py
+

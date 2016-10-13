@@ -1,5 +1,5 @@
 The big rush towards parallelism
-##############
+#########################################
 
 :date: 2016-01-15 10:20
 :modified: 2016-10-12 00:04
@@ -32,11 +32,11 @@ A deteminacy race occurs when two logically parallel instructions access the sam
 Now you might think that we will check for such conditions in our code and will be careful not to involve a write. But with increasing code reuse and functionalities getting abstracted away all the time this might be harder than it seems.
 
 Considering the above arguments I think the following rules should be followed.
-<ul>
-	<li>Always take the algorithmic approach to make the present program fastest. Algorithms are harder to understand but they have the have the advantage that they will give consistent results for similar output.</li>
-	<li>Try to learn Haskell and incorporate functional programming concepts in our code. This will lower the amount of side-effects in our methods which will result both in more robust code and better understanding of what our code does.</li>
-	<li>Concurrency maybe a good solution only in such cases as network calls which tend to be much slower and should be removed from the logical parts of the program.</li>
-</ul>
+
+- Always take the algorithmic approach to make the present program fastest. Algorithms are harder to understand but they have the have the advantage that they will give consistent results for similar output
+- Try to learn Haskell and incorporate functional programming concepts in our code. This will lower the amount of side-effects in our methods which will result both in more robust code and better understanding of what our code does.
+- Concurrency maybe a good solution only in such cases as network calls which tend to be much slower and should be removed from the logical parts of the program.
+
 There are the general thoughts. We should avoid concurrency as far as possible and in situations where they are absolutely necessary we should delegate them away to frameworks and the os as far as possible. I will highly recommend usage of frameworks and languages like `erlang`_. All in all concurrency is a highly treacherous path and must be trod with the utmost care and precaution.
 
 .. _Wikipedia: https://en.wikipedia.org/wiki/Multi-core_processor
@@ -44,3 +44,4 @@ There are the general thoughts. We should avoid concurrency as far as possible a
 .. _this coding horror blog post: http://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/
 .. _Introduction to Algorithms – Thomas H. Cormen: http://www.mif.vu.lt/~valdas/ALGORITMAI/LITERATURA/Cormen/Cormen.pdf
 .. _erlang: http://www.erlang.org/
+

@@ -1,5 +1,5 @@
 Migrating From Bitbucket To Github
-##############
+####################################################
 
 :date: 2016-08-15 10:20
 :modified: 2016-10-12 00:04
@@ -10,6 +10,7 @@ Migrating From Bitbucket To Github
 :summary: migrating from bitbucket to github
        
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Disclaimer: In this post I will be talking about `GitHub`_ and `Bitbucket`_. This may include information on related to various topics like price point differences between the various companies. These information are true to the best of my knowledge. Then again, these may change at any later date. Please look into the most recent documents provided directly by those companies to have a more upto date information before making any decisions for your company/product.
@@ -76,12 +77,10 @@ Before concluding this post I just want to add that there was a lot of complexit
 
 PEACE.
 
-<ul style="font-size: 12px;">
-    <li>https://gist.github.com/foogit/8410710</li>
-    <li>http://www.business2community.com/business-innovation/bitbucket-vs-github-best-version-control-software-business-01623901#Eo8gBT3SRB3KkEI2.97</li>
-    <li>https://codio.com/blog/moving-from-mercurial-to-git/</li>
-    <li>https://help.github.com/articles/remove-sensitive-data/</li>
-</ul>
+- https://gist.github.com/foogit/8410710
+- http://www.business2community.com/business-innovation/bitbucket-vs-github-best-version-control-software-business-01623901#Eo8gBT3SRB3KkEI2.97
+- https://codio.com/blog/moving-from-mercurial-to-git/
+- https://help.github.com/articles/remove-sensitive-data/
 
 .. _GitHub: https://github.com/
 .. _Bitbucket: https://bitbucket.org/
@@ -89,3 +88,4 @@ PEACE.
 .. _excellent articles: https://help.github.com/articles/create-a-repo/
 .. _nice article: http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
 .. _predictit repo: https://github.com/infinite-Joy/predictit
+

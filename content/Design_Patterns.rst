@@ -1,5 +1,5 @@
 Design Patterns
-##############
+#########################################
 
 :date: 2016-04-15 10:20
 :modified: 2016-10-12 00:04
@@ -14,11 +14,11 @@ A large computer system is very different from a small system in the sense that 
 Below are some common patterns that can be used and the context in which that they can be implemented. I have tried to given a simple exxplanation of the patterns along with a use cases where these can be implemented so that you are able to grasp some of the context in which these can be used. I have also tried to provide some common pitfalls or risks that the developer should be aware of while implementing the pattern. Of course the actual implementation of the specific pattern depends on the context of the application code and how well this is implemented. You should not look forward to implementing a pattern just because you think that you know about it. If implemented carelessly, one part of the code can have adverse effects on other parts of the system.
 
 The GOF proposed three kinds of patterns:
-<ol>
-	<li>Creational patterns: These patterns isolate the object creation part from the actual implementation.</li>
-	<li>Structural patterns: These deal with the architecture of the whole program and are concerned with how objects and classes can be combined to form larger structures.</li>
-	<li>Behavioural patterns: They are concerned more with the interaction between objects and the way an object behaves.</li>
-</ol>
+
+- Creational patterns: These patterns isolate the object creation part from the actual implementation.
+- Structural patterns: These deal with the architecture of the whole program and are concerned with how objects and classes can be combined to form larger structures.
+- Behavioural patterns: They are concerned more with the interaction between objects and the way an object behaves.
+
 Singleton pattern
 
 This is a creation pattern and is thought of as a more elegant design to the global variable. The philosophy is that we will have one and only one object of a given type. Use cases are logging, database operations, print requests to the printer, where there is a need to have only one instance across the application to avoid conflicting requests to the same resource.
@@ -76,15 +76,14 @@ This pattern is used to implement the Finite State Machines.
 Code for all the patterns listed here and many more can be found in the GitHub link `here`_. Please contribute to it or if a better implementation is found please update the libraries and examples.
 <p style="font-size: 12px;">References and Further Readings:</p>
 
-<ul style="font-size: 12px;">
-	<li>http://gameprogrammingpatterns.com/state.html</li>
-	<li>http://legacy.python.org/workshops/1997-10/proceedings/savikko.html</li>
-	<li>http://www.aleax.it/gdd_pydp.pdf</li>
-	<li>https://github.com/victorlin/design-patterns/tree/master/tests</li>
-	<li>https://github.com/faif/python-patterns</li>
-	<li>http://www.oodesign.com/template-method-pattern.html</li>
-</ul>
+- http://gameprogrammingpatterns.com/state.html
+- http://legacy.python.org/workshops/1997-10/proceedings/savikko.html
+- http://www.aleax.it/gdd_pydp.pdf
+- https://github.com/victorlin/design-patterns/tree/master/tests
+- https://github.com/faif/python-patterns
+- http://www.oodesign.com/template-method-pattern.html
 
 .. _Gang of Four book: http://www.amazon.in/Design-Patterns-Elements-Reusable-Oriented/dp/8131700070/ref=sr_1_1?ie=UTF8&amp;qid=1460127461&amp;sr=8-1&amp;keywords=gang+of+four
 .. _wikipedia link: https://en.wikipedia.org/wiki/Facade_pattern#Java
 .. _here: https://github.com/faif/python-patterns
+
