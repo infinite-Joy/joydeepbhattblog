@@ -3,8 +3,8 @@ IBM developer connect 2016
 
 :date: 2016-06-15 10:20
 :modified: 2016-10-12 00:04
-:tags: conference, IBM
-:category: conference
+:tags: conferences, IBM
+:category: conferences
 :slug: ibm-developer-connect-2016
 :authors: Joydeep Bhattacharjee
 :summary: ibm developer connect 2016
