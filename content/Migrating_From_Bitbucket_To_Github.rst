@@ -10,7 +10,8 @@ Migrating From Bitbucket To Github
 :summary: migrating from bitbucket to github
 :scripts: https//platform.twitter.com/widgets.js
 
-.. raw:: html       
+.. raw:: html
+
     <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
 
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
