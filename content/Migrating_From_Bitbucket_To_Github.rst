@@ -8,6 +8,8 @@ Migrating From Bitbucket To Github
 :slug: migrating-from-bitbucket-to-github
 :authors: Joydeep Bhattacharjee
 :summary: migrating from bitbucket to github
+:scripts: https//platform.twitter.com/widgets.js
+
        
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
 
@@ -23,53 +25,45 @@ So what does it mean for us, the every-day developers. One strategy can be that 
 
 First create a public repository on Github. For creating repositories there are `excellent articles`_ in case you dont already know how to create one. Do not check the"create README.md" option as this might introduce merge issues when doing the migrating later.
 
-Clone the bitbucket repo if you have not already done it
-<code style="font-size: 15px;">
-git clone git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git
-</code>
+Clone the bitbucket repo if you have not already done it.
+
+.. code-block:: bash
+    git clone git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git
 
 Please check once if the origin is pointing to the present bitbucket repository using the command <code style="font-size: 15px;">git remote -v</code>
 
 Next remote add the github repository link for the repository that you had created earlier. Note: It helps if the username for both GitHub and the Bitbucket is the same and you use the same username for commiting changes. This way your profile history in GitHub too will mirror all the work that you had done committing changes while working in the Bitbucket repo.
-<code style="font-size: 15px;">
-git remote add gitremote git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git
-</code>
+
+.. code-block:: bash
+    git remote add gitremote git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git
 
 Now the remote list should look like this.
-<code style="font-size: 15px;">
-gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (fetch)
-gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (push)
-origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (fetch)
-origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (push)
-upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (fetch)
-upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (push)
-</code>
+
+.. code-block:: bash
+    gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (fetch)
+    gitremote       git@github.com:YOUR-GIT-USERNAME/YOUR-GIT-REPOSITORY.git (push)
+    origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (fetch)
+    origin  git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git (push)
+    upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (fetch)
+    upstream        git@bitbucket.org:COMPANY-NAME/COMPANY-BIT-REPOSITORY.git (push)
 
 The normal flow can then be resumed as is said in this `nice article`_ on git flows.
-Make a new branch
-<code style="font-size: 15px;">
-git checkout -b migration
-</code>
+Make a new branch.::
+    
+    git checkout -b migration
 
-Make any changes if needed. Commit them
-<code style="font-size: 15px;">
-git commit -am "latest commits before migration"
-</code>
+Make any changes if needed. Commit them::
+    git commit -am "latest commits before migration"
 
-Push the branch to Github.
-<code style="font-size: 15px;">
-git push gitremote migration
-</code>
+Push the branch to Github.::
+    git push gitremote migration
 
 Now that the code has been pushed you can go to Github. You will find that a new branch has been created there. You can open a pull request and merge the branch with master.
 
 Now you might ask why to do this roundabout method instead of just initialising the repo and copying all the code directly from the directory which has the Bitbucket code. Now you dont want to lose the git history that you have created through all the work that you have done in the Bitbucket repo for the last few months. That is the whole point of source control where you want to retain the history of the code and would like to revert back to any previous state from the point where you started your development journey. So pushing all the code along with all the history makes sense.
 
-Now while doing this on my own `predictit repo`_ which I recently open-sourced, I ran into one more trouble. Github doesnt allow files to be more than 50mb. This is not an issue with Bitbucket. So I had to purge my git history because of that using the below command.
-
-<code style="font-size: 15px;">
-git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch path/to/big/file' --prune-empty --tag-name-filter cat -- --all
-</code>
+Now while doing this on my own `predictit repo`_ which I recently open-sourced, I ran into one more trouble. Github doesnt allow files to be more than 50mb. This is not an issue with Bitbucket. So I had to purge my git history because of that using the below command.::
+    git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch path/to/big/file' --prune-empty --tag-name-filter cat -- --all
 
 After that committed the changes and pushed the repo to GitHub and it worked like a charm. If you take this method your profile history should also reflect the amount of work you have done for this.
 
