@@ -8,6 +8,8 @@ Migrating From Bitbucket To Github
 :slug: migrating-from-bitbucket-to-github
 :authors: Joydeep Bhattacharjee
 :summary: migrating from bitbucket to github
+:scripts: https//platform.twitter.com/widgets.js
+
        
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
 
@@ -24,7 +26,6 @@ So what does it mean for us, the every-day developers. One strategy can be that 
 First create a public repository on Github. For creating repositories there are `excellent articles`_ in case you dont already know how to create one. Do not check the"create README.md" option as this might introduce merge issues when doing the migrating later.
 
 Clone the bitbucket repo if you have not already done it
-<code style="font-size: 15px;">
 git clone git@bitbucket.org:YOUR-BIT-USERNAME/YOUR-BIT-REPOSITORY.git
 </code>
 

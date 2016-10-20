@@ -1,4 +1,4 @@
-source: http://www.cs.uku.fi/~mnykanen/FOH/lectures1.pdf
+source - http://www.cs.uku.fi/~mnykanen/FOH/lectures1.pdf
 
 what is functional programming?
 
@@ -30,42 +30,44 @@ As you know all variables in bash is global. this greatly hampers code reading.
 
 2. no reassignment/ minimal assignment
 
-using pipes
-function last_difference
-{
-    grep -n "${pattern}" "${parse_file}" \
-        | tail -1 | awk '{print $1}' |\
-        cut -d ":" -f1
-}
+.. code-block:: bash
+
+    using pipes
+    function last_difference
+    {
+        grep -n "${pattern}" "${parse_file}" \
+            | tail -1 | awk '{print $1}' |\
+            cut -d ":" -f1
+    }
 
 
-function all_differences
-{
-    cat "${parse_file}" | awk 'NR>="$(last_difference)"'
-}
+    function all_differences
+    {
+        cat "${parse_file}" | awk 'NR>="$(last_difference)"'
+    }
 
 
-function duplicates
-{
-    echo "" > _tmp_dup.txt
-    while read x; do
-        # take only the paths
-        echo "${x}" | awk '{print $3}' >> _tmp_dup.txt
-    done
+    function duplicates
+    {
+        echo "" > _tmp_dup.txt
+        while read x; do
+            # take only the paths
+            echo "${x}" | awk '{print $3}' >> _tmp_dup.txt
+        done
 
-    # get only the duplicates
-    cat _tmp_dup.txt | awk '++A[$1]==2'
-}
+        # get only the duplicates
+        cat _tmp_dup.txt | awk '++A[$1]==2'
+    }
 
 
-function only_once
-{
-    diff  <(all_differences | awk '{print $3}' | uniq )\
-         <(all_differences | duplicates)
-}
+    function only_once
+    {
+        diff  <(all_differences | awk '{print $3}' | uniq )\
+             <(all_differences | duplicates)
+    }
 
-execution order - using | pipe
-
+    execution order - using | pipe
+    
 3. if a program is referentially transparent then we can manipulate its programs as algebaic equations
 bash-4.2$ x=10
 bash-4.2$ echo $((x+1))
@@ -115,7 +117,7 @@ after
 
 http://stackoverflow.com/questions/5672289/bash-pass-a-function-as-parameter
 
-#####################################################
+xxxxxxxxxxxxxx
 
 check out the following library for more advanced implementations of functional paradigms
 
