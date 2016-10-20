@@ -9,12 +9,14 @@ Windows task automaton using pywinauto
 :authors: Joydeep Bhattacharjee
 :summary: automation in windows using python
 
-<script> window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v2.6' }); }; (function(d, s, id){ var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
+.. raw:: html
+
+    <script> window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v2.6' }); }; (function(d, s, id){ var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
   
-<div 
-  class="fb-post" 
-  data-href="https://www.facebook.com/eyantrarit/photos/a.630456120414490.1073741828.627320484061387/699969443463157/?type=3&theater" 
-  data-width="500"></div>
+    <div 
+      class="fb-post" 
+      data-href="https://www.facebook.com/eyantrarit/photos/a.630456120414490.1073741828.627320484061387/699969443463157/?type=3&theater" 
+      data-width="500"></div>
 
 Python has a huge number of libraries and continually new libraries are being developed that leverage the existing libraries and push the boundaries even more. So it is of no doubt that there will be libraries that make automating everyday tasks seem like a piece of cake. While researching into those libraries I found out about the selenium library that builds on top of the selenium framework and provides easy automation of browser based tasks. This is a great way to automate website and browser testing and can be leveraged by website designers and developers.
 
@@ -27,46 +29,48 @@ not "pure" if you like to put it that way.
 
 Now lets move on to the installations and the setup that is required. First of course you need `Python`_. Please ensure that you have pip and virtualenv as well. If you are using python3 that would translate to pip3 and pyvenv. I will be using the python2.7 paradigm for the trivial things. Please translate it to python3 as and where necessary. For non obvious difference I will point those out explicitly.
 
-Then fire up the virtualenv.
+Then fire up the virtualenv.::
 
-<code>virtualenv venv</code>
+    virtualenv venv
 
-This should setup the virtual environment in your automaton root directory. Since this is primarily thought to be developed in windows we need to run the activate batch file.
+This should setup the virtual environment in your automaton root directory. Since this is primarily thought to be developed in windows we need to run the activate batch file.::
 
-<code>venv\Scripts\activate.bat</code>
+    venv\Scripts\activate.bat
 
-Then install the following packages.
+Then install the following packages.::
 
-<code>pip install pywinauto, nose, pytest</code>
+    pip install pywinauto, nose, pytest
 
-In addition go to the install the pyinstaller package
+In addition go to the install the pyinstaller package::
 
-<code>pip install pyinstaller</code>
+    pip install pyinstaller
 
 This is optional and is required if you need to provide binaries which will run on other scheduling servers where you would like to avoid installing the python package. If you are not concerned about that and need to run the automaton locally then this step can be skipped.
 
-Then download the swapy package. Either clone the package by typing the following command,
+Then download the swapy package. Either clone the package by typing the following command,::
 
-<code>git clone https://github.com/pywinauto/SWAPY.git</code>
+    git clone https://github.com/pywinauto/SWAPY.git
 
-or just download the zip file and unzip it. This is used to identify the handlers and the controls that can be run on a window. There is no good way to install it so I will suggest install the dependencies and running it directly.
+or just download the zip file and unzip it. This is used to identify the handlers and the controls that can be run on a window. There is no good way to install it so I will suggest install the dependencies and running it directly.::
 
-<code>pip install -r dev-requirements.txt
-python swapy-ob.py</code>
+    pip install -r dev-requirements.txt
+    python swapy-ob.py
 
 This should open a window where the controls will be shown for the existing windows that are open. Select the window that you are looking forward to automate and then this should give the control. Good screenshots are available in the `swapy git page`_.
 
 One last package that I would suggest that you download is the `autoit package`_. This is a whole package and automating language by itself but I didn't feel very comfortable in it. But one of the tools that come packaged with the installer is the autoit window info tool. In many cases I was seeing that I was not finding the specific control for the button or a menu item that I need to be clicked. This window info is a very good tool to find the specific coordinates of the button or the control so that I can pass the coordinated to the mouse click method.
 
-<a href="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info.png"><img src="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info-200x300.png" alt="window_info" width="200" height="300" class="alignnone size-medium wp-image-117" /></a>
+.. raw:: html
+
+    <a href="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info.png"><img src="http://joydeepbhatt.com/wp-content/uploads/2016/07/window_info-200x300.png" alt="window_info" width="200" height="300" class="alignnone size-medium wp-image-117" /></a>
 
 As you can see in the screenshot the mouse menu is highlighted. First give cntrl+shift+f to unfreeze the window info tool. Then if you move the mouse you will see that the position property will change and it would show you the coordinates. Once you take the mouse and hover over the control that you want to click, then press cntrl+shift+f to freeze the tool again and then you can copy the coordinates to your script.
 
 Then fire up and start writing your script. If you still have problems ping me up and I will call you. A sample script is kept at this `github link`_. If you feel that something can be made better or one of the functions can be made smaller send a pull request and I will be happy to merge it.
 
-At the end if you need to distribute the file as a windows exe binary run the following command
+At the end if you need to distribute the file as a windows exe binary run the following command::
 
-<code>pyinstaller --onefile --paths "drive:\path\toi\venv\venv\Lib\site-packages" my_automaton.py</code>
+    pyinstaller --onefile --paths "drive:\path\toi\venv\venv\Lib\site-packages" my_automaton.py
 
 The onefile arguments tells pyinstaller to generate only one binary file. Paths need to be provided so that pyinstaller will search for the requisite packages in the virtual environment directory. If there are any errors in the build please check if its not a syntax error in the script. Test the binary and repeat till you have everything in place.
 

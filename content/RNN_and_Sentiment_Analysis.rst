@@ -16,6 +16,7 @@ One class of problems that can be taken to understand how this whole thing works
 So first we can import all the libraries
 
 .. code-block:: python
+
     from __future__ import absolute_import
     from __future__ import print_function
     import numpy as np
@@ -37,26 +38,25 @@ One thing to note is that the seeding should be done at the top for reproducibil
 
 Moving on to the next part of the code.
 
-<code>
-max_features = 20000
-maxlen = 100
-batch_size = 32
+.. code-block:: python
+    max_features = 20000
+    maxlen = 100
+    batch_size = 32
 
-print("Loading data...")
-(X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words = max_features, test_split = 0.2)
-print(len(X_train), 'train sequences')
-print(len(X_test), 'test sequences')
-</code>
+    print("Loading data...")
+    (X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words = max_features, test_split = 0.2)
+    print(len(X_train), 'train sequences')
+    print(len(X_test), 'test sequences')
 
 Here we initialise some values. "batch_size" is the number of phrases that our model reads at a time. Then we can see that the imdb dataset has been loaded.
 
-<code>
-print("Pad sequences(samples x time)")
-X_train = sequence.pad_sequences(X_train, maxlen = maxlen)
-X_test = sequence.pad_sequences(X_test, maxlen = maxlen)
-print("X_train shape:", X_train.shape)
-print("X_test shape:", X_test.shape)
-</code>
+.. code-block:: python
+
+    print("Pad sequences(samples x time)")
+    X_train = sequence.pad_sequences(X_train, maxlen = maxlen)
+    X_test = sequence.pad_sequences(X_test, maxlen = maxlen)
+    print("X_train shape:", X_train.shape)
+    print("X_test shape:", X_test.shape)
 
 Then we pad the sequences. From the `documentation`_ we can see that the maxlen arg is the maximum sequence length, longer sequences are truncated and shorter sequences are padded with zeros at the end. This does not have any major impact as we can see from `this thread`_ explained by fchollet.
 
@@ -84,12 +84,12 @@ Moving on to the next part of the code, we build the sequential model,
 
 and then add the various layers
 
-<code>
-model.add(LSTM(128))
-model.add(Dropout(0.5))
-model.add(Dense(1))
-model.add(Activation('sigmoid'))
-</code>
+.. code-block:: python
+
+    model.add(LSTM(128))
+    model.add(Dropout(0.5))
+    model.add(Dense(1))
+    model.add(Activation('sigmoid'))
 
 Please note that here we have used the LSTM algorithm with vector space having 128 dimensions. Please read more on LSTM `here`_. Also a sigmoid activation is used to provide us with a binary outputs.
 
@@ -104,40 +104,37 @@ Then we compile the function and then train it. One thing that needs to be noted
     score = model.fit(X_train, y_train, batch_size = batch_size,
               nb_epoch = 4, validation_data = (X_test, y_test))
 
-This should give the output in this manner.
+This should give the output in this manner.::
 
-<code>Train..
-Train on 20000 samples, validate on 5000 samples
-Epoch 1/4
-20000/20000 [==============================] - 377s - loss: 0.1632 - acc: 0.9388 - val_loss: 0.4682 - val_acc: 0.8312
-Epoch 2/4
-20000/20000 [==============================] - 631s - loss: 0.0806 - acc: 0.9718 - val_loss: 0.5661 - val_acc: 0.8272
-Epoch 3/4
-20000/20000 [==============================] - 570s - loss: 0.0514 - acc: 0.9820 - val_loss: 0.6380 - val_acc: 0.8218
-Epoch 4/4
-20000/20000 [==============================] - 373s - loss: 0.0405 - acc: 0.9869 - val_loss: 0.8619 - val_acc: 0.8126
-</code>
+    Train..
+    Train on 20000 samples, validate on 5000 samples
+    Epoch 1/4
+    20000/20000 [==============================] - 377s - loss: 0.1632 - acc: 0.9388 - val_loss: 0.4682 - val_acc: 0.8312
+    Epoch 2/4
+    20000/20000 [==============================] - 631s - loss: 0.0806 - acc: 0.9718 - val_loss: 0.5661 - val_acc: 0.8272
+    Epoch 3/4
+    20000/20000 [==============================] - 570s - loss: 0.0514 - acc: 0.9820 - val_loss: 0.6380 - val_acc: 0.8218
+    Epoch 4/4
+    20000/20000 [==============================] - 373s - loss: 0.0405 - acc: 0.9869 - val_loss: 0.8619 - val_acc: 0.8126
 
 As you can see that the accuracy is around 81%
 
-<code>
-print("Test score", score)
-print("Test accuracy:", acc)
-#print(score.history)
-#print(score)
-print("Test score", score.history["val_loss"][nb_epoch - 1])
-print("Test acc", score.history["val_acc"][nb_epoch - 1])
+.. code-block:: python
 
-Test score 0.861895102954
-Test accuracy: 0.8126
-</code>
+    print("Test score", score)
+    print("Test accuracy:", acc)
+    #print(score.history)
+    #print(score)
+    print("Test score", score.history["val_loss"][nb_epoch - 1])
+    print("Test acc", score.history["val_acc"][nb_epoch - 1])
 
-This is a basic model using the LSTM layer. Running this using GRU gives me the following output
+    Test score 0.861895102954
+    Test accuracy: 0.8126
 
-<code>
-Test score 0.564897893882
-Test accuracy: 0.838
-</code>
+This is a basic model using the LSTM layer. Running this using GRU gives me the following output::
+
+    Test score 0.564897893882
+    Test accuracy: 0.838
 
 Please let me know of models which will have a better accuracy. Of course one thing needs to be noted is that the dataset that has been chosen is small and hence for better predictions we should have used one of the pre-trained models.
 
