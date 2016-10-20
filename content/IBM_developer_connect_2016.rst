@@ -9,8 +9,10 @@ IBM developer connect 2016
 :authors: Joydeep Bhattacharjee
 :summary: ibm developer connect 2016
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A glimpse of what is happening at <a href="https://twitter.com/hashtag/IBMDevConnect?src=hash">#IBMDevConnect</a> IBM Dev Connect <a href="https://t.co/M4xarPQjrP">pic.twitter.com/M4xarPQjrP</a></p>&mdash; Abhinav (@soodabhinav08) <a href="https://twitter.com/soodabhinav08/status/743719514177576961">June 17, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+.. raw:: html
+
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A glimpse of what is happening at <a href="https://twitter.com/hashtag/IBMDevConnect?src=hash">#IBMDevConnect</a> IBM Dev Connect <a href="https://t.co/M4xarPQjrP">pic.twitter.com/M4xarPQjrP</a></p>&mdash; Abhinav (@soodabhinav08) <a href="https://twitter.com/soodabhinav08/status/743719514177576961">June 17, 2016</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Today I went to the first <a href="https://developer.ibm.com/india-dev-connect/">IBM developer connect 2016</a> event which was organised in KTPO, Whitefield, Bangalore. It was very cool. IBM brought out all stops to showcase their developer talent to the whole developer community. This at least brought me over, especially since my friends know how I feel about IBM, having worked in the WebSphere related technologies my whole professional career. They at least made me rethink that maybe I should not judge a company just by one product. The DevConnect conference itself generated a lot of enthusiasm as can be seen from the 3100 developers attending this from Bangalore and 10000 joining live from various other cities of India and around the globe.
 
@@ -48,7 +50,7 @@ Regarding branching techniques, an interesting idea that he has seen was that pe
 
 When I asked him about mercurial, he was all praises saying that he is a fan of distributed source control system. Mercurial in not bad technology per-se, its just bad marketing. There are many things in mercurial that he would like to see in git, and there are many things in git that he would like to see in mercurial.
 
-Lastly, thanks to the awesome Rock band <a href="http://lagori.in/">Lagori</a> for the hair raising performance at the end.
+Lastly, thanks to the awesome Rock band `Lagori`_ for the hair raising performance at the end.
 
 All in all very happy to see that IBM is really invested in the developer culture in India and looking forward to the conference next year.
 
@@ -56,3 +58,4 @@ START->CODE->PUSH->REPEAT
 
 .. _GitHub: https://en.wikipedia.org/wiki/GitHub
 .. _hubot: https://github.com/github/hubot
+.. _Lagori: http://lagori.in/

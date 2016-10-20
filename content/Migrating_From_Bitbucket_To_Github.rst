@@ -10,10 +10,10 @@ Migrating From Bitbucket To Github
 :summary: migrating from bitbucket to github
 :scripts: https//platform.twitter.com/widgets.js
 
-       
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
+.. raw:: html       
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New Post : GitHub vs. Bitbucket: It’s More Than Just Features <a href="http://t.co/5HcDgEJU8j">http://t.co/5HcDgEJU8j</a> by <a href="https://twitter.com/takipid">@takipid</a> <a href="https://twitter.com/tkfxin">@tkfxin</a> <a href="http://t.co/FkY9BHGtgM">pic.twitter.com/FkY9BHGtgM</a></p>&mdash; Iris Shoor (@IrisShoor) <a href="https://twitter.com/IrisShoor/status/469181854667784192">May 21, 2014</a></blockquote>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Disclaimer: In this post I will be talking about `GitHub`_ and `Bitbucket`_. This may include information on related to various topics like price point differences between the various companies. These information are true to the best of my knowledge. Then again, these may change at any later date. Please look into the most recent documents provided directly by those companies to have a more upto date information before making any decisions for your company/product.
 

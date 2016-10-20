@@ -31,10 +31,10 @@ The premise of array programming is that everything is a vector. A scalar is a v
 
 Now the question comes why should you as a programmer leave the current "safe" and familiar paradigm and start thinking in more abstract vectors. Lets look at the advantages.
 
- - Array programming model is a more high-level model and frees you from the task of breaking down or looping on the individual data point. You can just pass the whole matrix to the algorithm/function. Thus you will be delegating the unnecassy work to the compiler/interpreter and will be free to concentrate more on the more advanced portions of your respective problem.
- - You will be using the a well built library/interpreter to do the complex calculations which will definitely be faster that the simple loop constructs that you will be creating.
-  - Less code and hence less code debt. Less maintenence cost.
-  - The code is more amenable to formal proofs. You can employ algorithms that have been proven to be true and the algorithms can be written in one line. Instead of writing 10 lines to show matrix multiplication you can for example just write ``a +.* b`` in APL.
+- Array programming model is a more high-level model and frees you from the task of breaking down or looping on the individual data point. You can just pass the whole matrix to the algorithm/function. Thus you will be delegating the unnecassy work to the compiler/interpreter and will be free to concentrate more on the more advanced portions of your respective problem.
+- You will be using the a well built library/interpreter to do the complex calculations which will definitely be faster that the simple loop constructs that you will be creating.
+- Less code and hence less code debt. Less maintenence cost.
+- The code is more amenable to formal proofs. You can employ algorithms that have been proven to be true and the algorithms can be written in one line. Instead of writing 10 lines to show matrix multiplication you can for example just write ``a +.* b`` in APL.
 
 Apart from these obvio
 

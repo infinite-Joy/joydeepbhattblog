@@ -27,7 +27,9 @@ We can then get the content from the url through the requests module and then pa
 
 To get the specific resource from the webpage I used the firefox add-on `Firebug`_. After that if we hover on the specific resource that we need we can right click on that resource and this should appear.
 
-<a href="http://joydeepbhatt.com/wp-content/uploads/2015/11/firebug.png"><img class="alignnone size-full wp-image-38" src="http://joydeepbhatt.com/wp-content/uploads/2015/11/firebug.png" alt="firebug" width="222" height="248" /></a>
+.. raw:: html
+
+    <a href="firebug.png"><img class="alignnone size-full wp-image-38" src="firebug.png" alt="firebug" width="222" height="248" /></a>
 
 Click on Inspect Element with firebug and this should take you to a page which should show the specific resource along with the underlying tags. You can then right click on it again and this should select "copy xpath" or "copy relative xpath" which ever is present. This would copy the xpath to the clipboard. The xpath looks something like this.
 
