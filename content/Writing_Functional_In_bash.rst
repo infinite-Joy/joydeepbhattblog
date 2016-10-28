@@ -33,7 +33,7 @@ To do this we need to keep in mind what makes our code mre functional.
 1. No state
 ------------------------------------------------------
 
-As you know all variables in bash is global. this greatly hampers code reading.
+As you know all variables in bash by default is global. This greatly hampers code reading. Now to be fair there is the ``local`` keyword but we all know that no one uses it.
 
 So instead of the following happening where a local assignment can change the value of a global variable.
 
