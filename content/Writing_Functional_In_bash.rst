@@ -169,4 +169,8 @@ References:
 - http://unix.stackexchange.com/questions/60688/how-to-defer-variable-expansion
 - https://lists.gnu.org/archive/html/help-bash/2014-06/msg00013.html
 
+Older: `Migrating From Bitbucket To Github`_
+---------------------------------------------------------------------------
+
 .. _bash-lambda: https://github.com/spencertipping/bash-lambda
+.. _Migrating From Bitbucket To Github: http://joydeepbhatt.com/migrating-from-bitbucket-to-github.html
