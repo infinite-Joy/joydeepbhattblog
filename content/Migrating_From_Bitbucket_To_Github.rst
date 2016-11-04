@@ -72,6 +72,12 @@ Before concluding this post I just want to add that there was a lot of complexit
 
 PEACE.
 
+Newer: `Writing Functional In Bash`_
+---------------------------------------------------------------------------
+
+Older: `Windows task automaton using pywinauto`_
+---------------------------------------------------------------------------
+
 - https://gist.github.com/foogit/8410710
 - http://www.business2community.com/business-innovation/bitbucket-vs-github-best-version-control-software-business-01623901#Eo8gBT3SRB3KkEI2.97
 - https://codio.com/blog/moving-from-mercurial-to-git/
@@ -83,4 +89,5 @@ PEACE.
 .. _excellent articles: https://help.github.com/articles/create-a-repo/
 .. _nice article: http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
 .. _predictit repo: https://github.com/infinite-Joy/predictit
-
+.. _`Writing Functional In Bash`: http://joydeepbhatt.com/writing-functional-in-bash.html
+.. _`Windows task automaton using pywinauto`: http://joydeepbhatt.com/windows-task-automaton-using-pywinauto.html
