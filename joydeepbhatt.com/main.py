@@ -1,4 +1,5 @@
 from flask import Flask, render_template_string, redirect
+from flask import render_template
 from sqlalchemy import create_engine, MetaData
 from flask_login import UserMixin, LoginManager, login_user, logout_user
 from flask_blogging import SQLAStorage, BloggingEngine
@@ -53,7 +54,7 @@ index_template = """
 
 @app.route("/")
 def index():
-    return render_template_string(index_template)
+    return render_template('home.html')
 
 @app.route("/login/")
 def login():
