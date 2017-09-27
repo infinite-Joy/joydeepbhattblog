@@ -8,6 +8,7 @@ Thankyou for reading my blog
 
 * Blog links:
 
+    * [What is Machine Learning](https://medium.com/technology-nineleaps/what-is-machine-learning-8f4f117a9f4e)
     * [Migrating From Bitbucket To Github](http://joydeepbhatt.com/2016/08/migrating-from-bitbucket-to-github/)
     * [Windows task automaton using pywinauto](http://joydeepbhatt.com/2016/07/windows-task-automaton-using-pywinauto/)
     * [IBM developer connect 2016](http://joydeepbhatt.com/2016/06/ibm-developer-connect-2016/)
